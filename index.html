@@ -31,9 +31,10 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#hellums">James Hellums</a></li>
-								<li><a href="#moye">Jan Moye</a></li>
+								<li><a href="#about">About Us</a></li>
 								<li><a href="#cave">Skip Cave</a></li>
+								<li><a href="#moye">Jan Moye</a></li>
+								<li><a href="#hellums">James Hellums</a></li>
 								<li><a href="#contact">Book an Appointment</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -43,6 +44,35 @@
 				<!-- Main -->
 					<div id="main">
 
+						<!-- About Us -->
+						<article id="about">
+							<h2 class="major">About Us</h2>
+							<p>EiR is an organization on campus committed to helping students connect with real industry professionals.</p>
+							<p>You can use our program to find mentors or find general guidence in an industry or field that interests you!</p>
+							<h2 class="major">Contact Us</h2>
+							<form id="form" name="contact" netlify>
+								<div class="field half first">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="netid">NetID</label>
+									<input type="text" name="netid" id="netid" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4">Have any feedback? Let us know here! You can request mentors in specific fields or suggest new mentors.</textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="special" onclick="submit(); return false;"/></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+								</form>
+						</article>
 						<!-- Volunteers -->
 							<article id="hellums">
 								<h2 class="major">James Hellums</h2>
@@ -63,12 +93,6 @@
 								<span class="image "><img src="images/cave.jpg" alt="" width="180"/></span>
 								<p>Skip Cave is skilled at analog design, EE CAD design tools, machine learning, and speech recognition. Other interests of Skip's include music such as the <a href="http://friscojazzband.org" target="_blank" rel="nooppenr noreffer">Frisco Jazz Band</a>.</p>
 								<p>Skip is open to meeting Wednesday 11am to 2pm and evenings from 5 to 8pm.</p>
-							</article>
-
-							<article id="houri">
-								<h2 class="major">Manal Houri</h2>
-								<span class="image "><img src="images/houri.jpg" alt="" width="180"/></span>
-								<p>Manal Houri is our newest volunteer! We hope that you learn a lot from her. More information along with her hours will be posted shortly!</p>
 							</article>
 							
 							<!-- Contact -->
@@ -105,18 +129,18 @@
 									<li><input type="submit" value="Send Message" class="special" onclick="submit(); return false;"/></li>
 									<li><input type="reset" value="Reset" /></li>
 								</ul>
-							</form>
-						</article>
+								</form>
+							</article>
+							</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; UTD EiR <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+						<!-- Footer -->
+						<footer id="footer">
+							<p class="copyright">&copy; UTD EiR <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</footer>
+				</div>
 
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
+		<!-- Background -->
+		<div id="bg"></div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

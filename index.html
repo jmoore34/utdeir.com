@@ -36,8 +36,8 @@
 								<li><a href="#smith">Klyne Smith</a></li>
 								<li><a href="#more">More volunteers coming soon</a></li>
 								<li><a href="#contact">Book an Appointment</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
+
 						</nav>
 					</header>
 
@@ -64,8 +64,8 @@
 									<input type="text" name="netid" id="netid" />
 								</div>
 								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4" placeholder="Have any feedback? Let us know here! You can request mentors in specific fields or suggest new mentors."></textarea>
+									<label for="message1">Message</label>
+									<textarea name="message" id="message1" rows="4" placeholder="Have any feedback? Let us know here! You can request mentors in specific fields or suggest new mentors."></textarea>
 								</div>
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" class="special" onclick="submit(); return false;"/></li>
@@ -137,8 +137,8 @@
 										</div>
 								</div>
 								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4" placeholder="Please be sure to include when you are available."></textarea>
+									<label for="message2">Message</label>
+									<textarea id="message2" rows="4" placeholder="Please be sure to include when you are available."></textarea>
 								</div>
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" class="special" onclick="submit(); return false;"/></li>
@@ -146,6 +146,47 @@
 								</ul>
 								</form>
 							</article>
+
+						<article id="newsletter">
+							<h2 class="major">Join our Newsletter</h2>
+							<form name="newsletter" netlify>
+								<div class="field half first">
+									<label for="name">Name</label>
+									<input type="text" name="name"  />
+								</div>
+								<div class="field half">
+									<label for="netid">NetID</label>
+									<input type="text" name="netid"  />
+
+								</div>
+								<div class="field">
+									<label for="email">Preferred email</label>
+									<input type="text" name="email"  />
+								</div>
+
+								<div class="field">
+									<label for="major">Major</label>
+									<div class="select-wrapper">
+										<select name="major">
+											<option value="BMEN">BMEN</option>
+											<option value="CE">CE</option>
+											<option value="CS">CS</option>
+											<option value="EE">EE</option>
+											<option value="ITS">ITS</option>
+											<option value="SE">SE</option>
+											<option value="other">Other</option>
+										</select>
+									</div>
+								</div>
+
+
+
+								<ul class="actions">
+									<li><input type="submit" value="Join" class="special" onclick="submit(); return false;"/></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+							</form>
+						</article>
 							</div>
 
 						<!-- Footer -->

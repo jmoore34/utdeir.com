@@ -61,13 +61,13 @@
 								</div>
 								<div class="field">
 									<label for="message1">Message</label>
-									<textarea name="message" id="message1" rows="4" placeholder="Have any feedback? Let us know here! You can request mentors in specific fields or suggest new mentors." required/>
+									<textarea required name="message" id="message1" rows="4" placeholder="Have any feedback? Let us know here! You can request mentors in specific fields or suggest new mentors." ></textarea>
 								</div>
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" class="special" onclick="submit(); return false;"/></li>
 									<li><input type="reset" value="Reset" /></li>
 								</ul>
-								</form>
+							</form>
 						</article>
 						<!-- Volunteers -->
 
@@ -75,7 +75,7 @@
 								<h2 class="major">Jan Moye</h2>
 								<span class="image "><img src="images/moye.jpg" alt="" width="180" /></span>
 								<p>Jan Moye is the Founding Principal at <a href="https://www.moyeconsulting.com/" target="_blank" rel="noopener norefferer">https://www.moyeconsulting.com/</a>. Jan has a background in Computer Science and founded her own company developing IT solutions.</p>
-								<p>Availability: Case by case basis</p>
+								<p>The best time to meet with Jan is on Fridays at 10am, however, she is available at other times. Please mention when you are free and we will do our best to set up a meeting.</p>
 							</article>
 
 
@@ -115,7 +115,7 @@
 								<div class="field">
 									<label for="person">Volunteer</label>
 									<div class="select-wrapper">
-                                        <select id="person" required>
+                                        <select id="person" name="volunteer" required>
                                             <option value="moye">Jan Moye</option>
                                             <option value="smith">Klyne Smith</option>
                                         </select>
@@ -123,7 +123,7 @@
 								</div>
 								<div class="field">
 									<label for="message2">Message</label>
-									<textarea id="message2" rows="4" placeholder="Please be sure to include when you are available." required/>
+									<textarea id="message2" rows="4" placeholder="Please be sure to include when you are available." required></textarea>
 								</div>
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" class="special" onclick="submit(); return false;"/></li>
@@ -137,22 +137,22 @@
 							<form name="newsletter" netlify>
 								<div class="field half first">
 									<label for="name1">Name</label>
-									<input type="text" id="name1"  />
+									<input type="text" id="name1" name="name" />
 								</div>
 								<div class="field half">
-									<label for="netid">NetID</label>
-									<input type="text" id="netid"  />
+									<label for="netid1">NetID</label>
+									<input type="text" id="netid1" name="netid" />
 
 								</div>
 								<div class="field">
-									<label required for="email">Preferred email</label>
-									<input type="text" id="email"  />
+									<label required for="email0">Preferred email</label>
+									<input type="text" id="email0" name="netid" />
 								</div>
 
 								<div class="field">
 									<label for="major">Major</label>
 									<div class="select-wrapper">
-										<select name="major" id="major">
+										<select name="major" id="major" name="major">
 											<option value="BMEN">BMEN</option>
 											<option value="CE">CE</option>
 											<option value="CS">CS</option>

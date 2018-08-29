@@ -57,15 +57,11 @@
 								</div>
 								<div class="field half">
 									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="netid">NetID</label>
-									<input type="text" name="netid" id="netid" />
+									<input type="text" name="email" id="email" required/>
 								</div>
 								<div class="field">
 									<label for="message1">Message</label>
-									<textarea name="message" id="message1" rows="4" placeholder="Have any feedback? Let us know here! You can request mentors in specific fields or suggest new mentors."></textarea>
+									<textarea name="message" id="message1" rows="4" placeholder="Have any feedback? Let us know here! You can request mentors in specific fields or suggest new mentors." required></textarea>
 								</div>
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" class="special" onclick="submit(); return false;"/></li>
@@ -117,20 +113,20 @@
 								<form id="form" name="booking" netlify>
 								<div class="field half first">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
+									<input type="text" name="name" id="name" required/>
 								</div>
 								<div class="field half">
 									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
+									<input type="text" name="email" id="email" required/>
 								</div>
 								<div class="field">
 									<label for="netid">NetID</label>
-									<input type="text" name="netid" id="netid" />
+									<input type="text" name="netid" id="netid" required/>
 								</div>
 								<div class="field">
 									<label for="person">Volunteer</label>
 									<div class="select-wrapper">
-									<select name="volunteer">
+									<select name="volunteer" required>
 										<option value="moye">Jan Moye</option>
 										<option value="smith">Klyne Smith</option>
 										</select>
@@ -138,7 +134,7 @@
 								</div>
 								<div class="field">
 									<label for="message2">Message</label>
-									<textarea id="message2" rows="4" placeholder="Please be sure to include when you are available."></textarea>
+									<textarea id="message2" rows="4" placeholder="Please be sure to include when you are available." required></textarea>
 								</div>
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" class="special" onclick="submit(); return false;"/></li>
@@ -160,7 +156,7 @@
 
 								</div>
 								<div class="field">
-									<label for="email">Preferred email</label>
+									<label for="email" required>Preferred email</label>
 									<input type="text" name="email"  />
 								</div>
 

@@ -57,14 +57,14 @@
 								</div>
 								<div class="field half">
 									<label for="email">Email</label>
-									<input type="text" name="email" id="email" required/>
+									<input type="email" name="email" id="email" required/>
 								</div>
 								<div class="field">
 									<label for="message1">Message</label>
 									<textarea required name="message" id="message1" rows="4" placeholder="Have any feedback? Let us know here! You can request mentors in specific fields or suggest new mentors." ></textarea>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="special" onclick="submit(); return false;"/></li>
+                                    <li><input type="submit" value="Send Message" class="special" action="/#submitted"/></li>
 									<li><input type="reset" value="Reset" /></li>
 								</ul>
 							</form>
@@ -99,36 +99,36 @@
 							<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact the Volunteers</h2>
-								<form id="form" name="booking" netlify>
-								<div class="field half first">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" required/>
-								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="text" name="email" id="email" required/>
-								</div>
-								<div class="field">
-									<label for="netid">NetID</label>
-									<input type="text" name="netid" id="netid" required/>
-								</div>
-								<div class="field">
-									<label for="person">Volunteer</label>
-									<div class="select-wrapper">
-                                        <select id="person" name="volunteer" required>
-                                            <option value="moye">Jan Moye</option>
-                                            <option value="smith">Klyne Smith</option>
-                                        </select>
+                                    <form id="form1" name="booking" netlify>
+                                    <div class="field half first">
+                                        <label for="name2">Name</label>
+                                        <input type="text" name="name" id="name2" required/>
                                     </div>
-								</div>
-								<div class="field">
-									<label for="message2">Message</label>
-									<textarea id="message2" rows="4" placeholder="Please be sure to include when you are available." required></textarea>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="special" onclick="submit(); return false;"/></li>
-									<li><input type="reset" value="Reset" /></li>
-								</ul>
+                                    <div class="field half">
+                                        <label for="email2">Email</label>
+                                        <input type="email" name="email" id="email2" required/>
+                                    </div>
+                                    <div class="field">
+                                        <label for="netid">NetID</label>
+                                        <input type="text" name="netid" id="netid" required pattern="[A-Za-z]{3}\d{6}" title="A valid NetID is in the form abc123456.">
+                                    </div>
+                                    <div class="field">
+                                        <label for="person">Volunteer</label>
+                                        <div class="select-wrapper">
+                                            <select id="person" name="volunteer" required>
+                                                <option value="moye">Jan Moye</option>
+                                                <option value="smith">Klyne Smith</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="message2">Message</label>
+                                        <textarea id="message2" rows="4" placeholder="Please be sure to include when you are available." required></textarea>
+                                    </div>
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Join" class="special" action="/#submitted"/></li>
+                                        <li><input type="reset" value="Reset" /></li>
+                                    </ul>
 								</form>
 							</article>
 
@@ -145,8 +145,8 @@
 
 								</div>
 								<div class="field">
-									<label required for="email0">Preferred email</label>
-									<input type="text" id="email0" name="netid" />
+									<label for="email0">Preferred email</label>
+									<input type="email" id="email0" name="netid" required/>
 								</div>
 
 								<div class="field">
@@ -167,12 +167,18 @@
 
 
 								<ul class="actions">
-									<li><input type="submit" value="Join" class="special" onclick="submit(); return false;"/></li>
+									<li><input type="submit" value="Join" class="special" action="/#submitted"/></li>
 									<li><input type="reset" value="Reset" /></li>
 								</ul>
 							</form>
 						</article>
-							</div>
+
+                        <article id="submitted">
+                            <h2 class="major">Success</h2>
+                            <p>Form submitted successfully.</p>
+                        </article>
+
+                    </div>
 
 						<!-- Footer -->
 						<footer id="footer">

@@ -1,3 +1,20 @@
+# UT Dallas Engineer in Residence
+
+### Site information
+
+This is the mentor website for [utdeir.net](https://utdeir.net), formerly utdeir.com. 
+See also the official page on the UT Dallas website, [utdallas.edu/eir](https://utdallas.edu/eir).
+
+### Contact information
+To request changes for either utdeir.net or utdallas.edu/eir, please contact the current webmaster.
+
+Current webmaster: Jonathan Moore (https://github.com/programjm)
+
+Previous webmasters:
+* Cooper Le (https://github.com/CooperFLe/)
+
+### Template information
+
 Dimension by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)

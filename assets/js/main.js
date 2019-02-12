@@ -4,6 +4,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// Style overrides
+// Override certain features of the template
+
+// Remove the class that causes a middle line in the middle of the button group
+const STYLE_OVERRIDE_NO_MIDDLE_CLASS = true;
+
 (function($) {
 
 	skel.breakpoints({
@@ -64,7 +70,7 @@
 				$nav_li = $nav.find('li');
 
 			// Add "middle" alignment classes if we're dealing with an even number of items.
-				if ($nav_li.length % 2 == 0) {
+				if (!STYLE_OVERRIDE_NO_MIDDLE_CLASS && $nav_li.length % 2 == 0) {
 
 					$nav.addClass('use-middle');
 					$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
